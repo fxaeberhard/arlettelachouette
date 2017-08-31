@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Libraries -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <script>
+  $.getJSON('levels.json').done(function(data) {
+    var content = '';
+    $.each(data.levels, function(index, level) {
+      content += '<h3>' + level.title + '</h3><table class="table">';
+      $.each(level.stages, function(index, stage) {
+        content += '<tr><td>Code ' + index + ' </td><td> ' + stage.reply + '</td></tr>';
+      });
+      content += '</table>';
+    });
+    $('body').append(content);
+  });
+  </script>
+
+</body>

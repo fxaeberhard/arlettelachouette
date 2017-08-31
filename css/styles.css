@@ -1,0 +1,439 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    font-size: 1.9rem;
+}
+
+
+/*section {
+    display: block;
+}
+
+@media only screen and (orientation:portrait) {
+    section {
+        height: 100vw;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    section {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}*/
+
+section {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+section.title {
+    /*vertical-align: middle;*/
+    text-align: center;
+}
+
+section.title h1 {
+    font-size: 5rem;
+}
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    width: auto;
+    height: auto;
+    /* z-index: -100; */
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../assets/titre.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+section.title .play {
+    color white;
+    /* border: 3px; */
+    /* border-radius: 50%; */
+    z-index: 100;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    font-size: 10rem;
+    color: white;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+section.instructions {
+    background: url(../assets/instructions.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: contain;
+    background-position: 50%;
+}
+
+section.levels {
+    background: url(../assets/carte2.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: contain;
+    background-position: 50%;
+}
+
+section.levels button {
+    width: 80%;
+    height: 20%;
+    display: block;
+    /* margin: 5% auto; */
+    background: none;
+    border: none;
+    position: absolute;
+    /* top: 30%; */
+    width: 41%;
+    height: 29%;
+    font-size: 0;
+}
+
+section.levels button.active {
+    font-size: 9rem;
+}
+
+section.levels button:nth-child(1) {
+    /* background: pink; */
+    top: 0%;
+    right: 17%;
+}
+
+section.levels button:nth-child(2) {
+    /* background: pink; */
+    top: 40%;
+    right: 2%;
+    color: #09ac00;
+}
+
+section.levels button:nth-child(3) {
+    /* background: pink; */
+    top: 36%;
+    left: 3%;
+    color: red;
+}
+
+section.levels button:nth-child(4) {
+    /* background: pink; */
+    bottom: 7%;
+    left: 25%;
+    color: #0068d3;
+}
+
+section.levelend1 {
+    background: url(../assets/elisabeth-soupiere.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: contain;
+    background-position: 50%;
+    background-size: 80%;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 5rem;
+    color: #09ac00;
+    font-weight: bold;
+}
+
+body.level1 section.levelend1 {
+    background-image: url(../assets/auguste-statue.jpg);
+    color: #b10200;
+}
+
+body.level2 section.levelend1 {
+    background-image: url(../assets/marcel-lac.jpg);
+    color: #0068d3;
+    background-size: 100%;
+}
+
+section.levelend2 {
+    background-position-y: 50%;
+    background-size: contain;
+    background-position: 50%;
+    background: url(../assets/dialogue-elisabeth.png);
+    background-repeat: no-repeat;
+    background-position-y: -9%;
+    background-size: contain;
+    background-position: 50%;
+    background-size: 80%;
+    font-size: 3rem;
+    text-align: center;
+    /* padding-top: 5rem; */
+    color: #09ac00;
+    font-weight: bold;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    padding-top: 2rem;
+}
+
+section.levelend2 span {
+    display: block;
+    padding-bottom: 1rem
+}
+
+section.levelend2 button {
+    background: #09ac00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.level1 section.levelend2 {
+    background-image: url(../assets/dialogue-auguste.jpg);
+    color: #b10200
+}
+
+.level1 section.levelend2 button {
+    background: #b10200;
+}
+
+.level2 section.levelend2 {
+    background-image: url(../assets/dialogue-marcel.jpg);
+    color: #0068d3;
+}
+
+.level2 section.levelend2 button {
+    background: #0068d3;
+}
+
+section.map .point {
+    position: absolute;
+    top: 48%;
+    background: darkgray;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 6rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+section.map .point.active {
+    opacity: 1;
+}
+
+section.map .line {
+    position: absolute;
+    background: gray;
+    left: 40px;
+    top: calc(48% + 50px);
+    height: 5px;
+    width: 730px;
+}
+
+section.map .owl {}
+
+section.map .point:nth-child(2) {
+    left: 20px;
+}
+
+section.map .owl {
+    width: 110px;
+    position: absolute;
+    top: calc(48% - 80px);
+    pointer-events: none;
+}
+
+section.map .point:nth-child(3) {
+    left: 160px;
+}
+
+section.map .point:nth-child(4) {
+    left: 300px;
+}
+
+section.map .point:nth-child(5) {
+    left: 460px;
+}
+
+section.map .point:nth-child(6) {
+    left: 620px;
+}
+
+section.map .point:nth-child(7) {
+    left: 760px;
+}
+
+section.stage {
+    display: none;
+}
+
+section.stage .top,
+section.stagereply .top {
+    position: fixed;
+    border-bottom: 2px solid #09ac00;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #09ac00;
+    padding: .4rem;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1;
+}
+
+section.stage .top .fa-back,
+section.stagereply .top .fa-back {
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.level1 section.stage .top,
+.level1 section.stagereply .top {
+    border-color: #b10200;
+    color: #b10200;
+}
+
+.level2 section.stage .top,
+.level2 section.stagereply .top {
+    border-color: #0068d3;
+    color: #0068d3;
+}
+
+section.stage h5,
+section.stagereply h5 {
+    color: #09ac00;
+    font-size: 2rem;
+}
+
+.level1 section.stage h5,
+.level1 section.stagereply h5 {
+    color: #b10200;
+}
+
+.level2 section.stage h5,
+.level2 section.stagereply h5 {
+    color: #0068d3;
+}
+
+section.stage .text {
+    height: 50%;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 3.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+section.stage .text > img {
+    margin-right: 2rem;
+    max-width: 30%;
+    /* width: 160px; */
+    height: auto;
+    max-height: 80%;
+}
+
+section.stage .pic {
+    width: 100%;
+    height: 50%;
+    /*background: gray;*/
+    background-size: cover;
+    display: flex;
+    vertical-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.stage .pic button {
+    background: #09ac00;
+    color: white;
+    display: block;
+    height: 6rem;
+    border-radius: 20px;
+    border: none;
+    padding: 2rem;
+    /* vertical-align: middle; */
+}
+
+.level1 section.stage .pic button {
+    background: #b10200;
+}
+
+.level2 section.stage .pic button {
+    background: #0068d3;
+}
+
+section.stagereply {
+    padding: 2rem;
+    padding-top: 3.5rem;
+}
+
+section.stagereply img {
+    padding-right: 2rem
+}
+
+section.stagereply input {
+    margin-top: 3rem;
+    display: block;
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 100%;
+}
+
+section.stagereply .feedback {
+    color: #b10200;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+}
+
+
+/*
+section.stage .found {
+    text-align: center;
+    font-size: 7rem;
+}*/
+
+
+/*
+section.stage .found,
+section.stage .reply {
+    width: 100%;
+    height: 30%;
+}
+
+section.stage .reply {
+    display: none;
+    text-align: center;
+}
+
+section.stage .reply input {
+    font-size: 6rem;
+    width: 80%;
+    margin: 40px auto;
+    line-height: 1rem;
+}*/
+
+.max55p {
+    max-width: 55%;
+}

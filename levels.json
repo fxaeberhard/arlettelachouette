@@ -1,0 +1,120 @@
+{
+    "levels":
+    {
+        "0":
+        {
+            "title": "Chateau de nyon",
+            "endScreen": "Bravo tu as retrouvé Elizabeth!",
+            "stages": [
+            {
+                "text": "Bonjour 2! Je suis Arlette la chouette. J’ai perdu mes trois petits, pourrais-tu m’aider à les retrouver ? Je crois qu’ils sont partis au musée. Pour voir comme moi dans le noir et m’aider à chercher les indices, tu auras besoin de la lampe de ton téléphone.",
+                "text": "Ma petite Elisabeth aime beaucoup son cousin Edgar qui niche dans le château, elle est sûrement allée lui rendre visite.<br />Allons les rejoindre.",
+                "text2": "Cherche le code qu’Elisabeth a caché dans cette pièce. Entre-le dans ton téléphone.",
+                "reply": "756"
+            },
+            {
+                "text": "Elisabeth est bien passée par ici, mais elle est déjà repartie. Un autre oiseau ici pourra te fournira une énigme qui t’indiquera à quel endroit aller la chercher.",
+                "text2": "Combien de côtés a chaque symbole?",
+                "reply": "436"
+            },
+            {
+                "text": "Bravo, tu as résolu l’énigme. Malheureusement, Elisabeth est déjà partie à l’étage des prisons.",
+                "text2": "Elisabeth est bien passée dans cette pièce, elle a dissimulé un code qu’il faut trouver. Entre-le dans ton téléphone.",
+                "reply": "832"
+            },
+            {
+                "text": "Elisabeth a froid aux pieds, cherche dans les cellules quelque chose qui pourrait l’aider.",
+                "text2": "Un code se trouve à proximité.",
+                "reply": "614"
+            },
+            {
+                "text": "Eh non, Elisabeth n’est pas par ici. Elle est sûrement allée rendre visite à son amie Jeanette la Jument dans la cellule d’en face. Il me semble qu’elle était en train de résoudre une énigme près de la fenêtre.",
+                "text2": "Trouve la bonne combinaison. <img src=\"assets/chateau_etape7.png\" class=\"img-responsive\" >",
+                "reply": "983"
+            },
+            {
+                "text": "Bravo, tu as résolu l’énigme. Elisabeth est à nouveau repartie, elle est descendue de deux étages.",
+                "text2": "Toujours pas là ! La coquine Elisabeth a probablement laissé un code. Cherche-le et entre-le dans ton téléphone.",
+                "reply": "934"
+            },
+            {
+                "text": "<img src=\"assets/message-elisabeth.png\" class=\"img-responsive\" >",
+                "text2": "Trouve le code chiffré qui correspond aux lettres.<img src=\"assets/chateau_etape11.png\" class=\"img-responsive max55p center-block\" />",
+                "reply": "651920914"
+            }]
+        },
+        "1":
+        {
+            "title": "Musée romain",
+            "endScreen": "Bravo tu as retrouvé Auguste!",
+            "stages": [
+            {
+                "text": "Mon petit Auguste est passionné par l’Antiquité. Il est sûrement allé au musée romain.<br />Allons voir !",
+                "text2": "Auguste est allé observer le chantier de la basilique. Il a caché un code dans cette pièce. Entre-le dans ton téléphone.",
+                "reply": "482"
+            },
+            {
+                "text": "Auguste a filé dans une autre partie du musée en suivant un chien. Un code se trouve à proximité de l’empreinte que ce dernier a laissée sur une tuile.",
+                "text2": "Entre le nom de l’objet qui se trouve à côté de la tuile avec l’empreinte de patte, ainsi que le code caché",
+                "reply": "lampe16"
+            },
+            {
+                "text": "Bravo ! Tu as trouvé la bonne réponse. Ensuite, Auguste est parti admirer les magnifiques décors qui ornaient la villa de Commugny.",
+                "text2": "Auguste a dissimulé un code près de cette peinture murale.",
+                "reply": "369"
+            },
+            {
+                "text": "Le musée est parfois plongé dans le noir, Auguste a besoin de quelque chose pour s’éclairer. Cherche l’objet qui pourrait l’aider. Tu trouveras une énigme à résoudre à proximité.",
+                "text2": "A l’aide de la grille codée, déchiffre le mot mystère.<img src=\"assets/Plan de travail 61.png\" class=\"img-responsive max55p center-block\" />",
+                "reply": "lampe"
+            },
+            {
+                "text": "Bravo ! Tu as résolu l’énigme. Sacré Auguste, avec sa lampe il est parti explorer le reste du musée.",
+                "text2": "Impressionnant toutes ces amphores, quel méli mélo ! Auguste a caché un code dans ce secteur.",
+                "reply": "271"
+            },
+            {
+                "text": "<img src=\"assets/Plan de travail 65.png\" class=\"img-responsive\" >",
+                "text2b": "Oups cet énigme n\"est pas implémentée la solution est \"auguste\"",
+                "text2": "Trouve le mot caché, grâce à la roue de codage. <img src=\"assets/mmodwhee.png\" class=\"img-responsive max55p center-block\" />",
+                "reply": "auguste"
+            }]
+        },
+        "2":
+        {
+            "title": "Musée du léman",
+            "endScreen": "Bravo tu as retrouvé Marcel!",
+            "stages": [
+            {
+                "text": "Mon petit Marcel a toujours rêvé d’être un poisson. Il est peut-être au musée du Léman.<br />Partons à sa recherche.",
+                "text2": "Tous ces hameçons et ces filets au plafond, quel curieux endroit. Marcel est passé par là et a laissé un code. Trouve-le et entre-le dans ton téléphone.",
+                "reply": "561"
+            },
+            {
+                "text": "Marcel est allé dans la salle aux bateaux pour trouver un moyen d’aller sur l’eau. Il a découvert un curieux vélo flottant. A proximité une énigme est cachée.",
+                "text2": "Trouve le chiffre caché derrière ces symboles.<img src=\"assets/Plan de travail 60.png\" class=\"img-responsive max55p center-block\" />",
+                "reply": "752"
+            },
+            {
+                "text": "Bravo! Tu as résolu l’énigme. Le vélo c’est rigolo, mais il ne permet pas de voir les poissons. Marcel est donc monté à l’étage supérieur pour trouver un moyen de nager avec eux.",
+                "text2": "C’est passionnant tous ces plans de sous-marins. Voilà un bon moyen pour rejoindre les poissons. En passant dans cette pièce Marcel a laissé un code.",
+                "reply": "183"
+            },
+            {
+                "text": "Ça y est ! Marcel a trouvé ! La cabine du sous-marin est le moyen idéal de nager avec les poissons. Il y a laissé une énigme.",
+                "text2": "À l’aide de l’alphabet morse, trouve le mot mystère.<img src=\"assets/Plan de travail 62.png\" class=\"img-responsive max55p center-block\" />",
+                "reply": "dix"
+            },
+            {
+                "text": "Bravo ! Tu as résolu l’énigme. Marcel a croisé sur sa route d’autres animaux. Pour les découvrir, monte tout en haut.",
+                "text2": "Certains de ces oiseaux ont de la chance, ils savent à la fois nager et voler ! Marcel a caché un code à côté de l’un d’eux.",
+                "reply": "936"
+            },
+            {
+                "text": "<img src=\"assets/Plan de travail 64.png\" class=\"img-responsive\">",
+                "text2": "Trouve le mot mystère correspondant aux symboles.<img src=\"assets/Plan de travail 63.png\" class=\"img-responsive max55p center-block\" />",
+                "reply": "bateau"
+            }]
+        }
+    }
+}
