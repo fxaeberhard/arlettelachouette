@@ -5,6 +5,7 @@ body {
 }
 
 
+
 /*section {
     display: block;
 }
@@ -342,9 +343,11 @@ section.stage .text {
     justify-content: space-around;
     align-items: center;
     font-size: 1.7rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-section.stage .text > img {
+section.stage .text>img {
     margin-right: 2rem;
     max-width: 30%;
     /* width: 160px; */
@@ -362,6 +365,8 @@ section.stage .pic {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section.stage .pic button {
@@ -388,6 +393,11 @@ section.stagereply {
     padding-top: 3.5rem;
 }
 
+section.stagereply .text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 section.stagereply img {
     padding-right: 2rem
 }
@@ -406,6 +416,7 @@ section.stagereply .feedback {
     display: none;
     margin: 0 auto;
 }
+
 
 
 /*
